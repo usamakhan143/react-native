@@ -1,11 +1,10 @@
-/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Button, FlatList, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 import styles from '../styles/styles';
 
-// Working on flatlist.
+// Custom List
 
-const usersData = [
+const usersAss = [
   {id: 1, name: 'John Doe', age: 25, email: 'john.doe@example.com'},
   {id: 2, name: 'Jane Smith', age: 30, email: 'jane.smith@example.com'},
   {id: 3, name: 'Bob Johnson', age: 28, email: 'bob.johnson@example.com'},
@@ -29,25 +28,18 @@ const usersData = [
   // Add more user objects as needed
 ];
 
-const User = () => {
+const Customlistview = () => {
   return (
-    <View style={{backgroundColor: 'yellow', padding: 10}}>
-      <FlatList
-        data={usersData}
-        renderItem={({item}) => (
-          <View style={styles.container}>
-            <View style={[styles.column, {width: '80%'}]}>
-              <Text style={styles.text}>{item.name}</Text>
-              <Text style={styles.text}>{item.email}</Text>
-            </View>
-            <View style={[styles.column, {width: '20%'}]}>
-              <Button title="GO" />
-            </View>
-          </View>
-        )}
-      />
+    <View>
+      <Text style={{fontSize: 25, textAlign: 'center'}}>
+        Custom List In React Native
+      </Text>
+
+      {usersAss.map(item => (
+        <Text>{item.name}</Text>
+      ))}
     </View>
   );
 };
 
-export default User;
+export default Customlistview;

@@ -1,12 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import {View} from 'react-native';
-import Login from './components/Login';
-import User from './components/User';
+import Customlistview from './components/Customlistview';
 
 function App(): JSX.Element {
   return (
     <View>
-      <User />
+      <Customlistview />
     </View>
   );
 }
