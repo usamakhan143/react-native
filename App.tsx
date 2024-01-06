@@ -1,11 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import {View} from "react-native";
-import Sectionlistcustom from "./components/section-list/Sectionlistcustom";
+import Classcomponent from "./components/Classcomponent";
 
 function App(): JSX.Element {
   return (
     <View>
-      <Sectionlistcustom />
+      <Classcomponent />
     </View>
   );
 }
