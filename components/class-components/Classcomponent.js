@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React, { Component } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
-import styles from "../styles/styles";
+import styles from "../../styles/styles";
 
 class Classcomponent extends Component {
     pressMe = () => {

@@ -1,11 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import {View} from "react-native";
-import Classcomponent from "./components/Classcomponent";
+import Stateincomponent from "./components/class-components/Stateincomponent";
 
 function App(): JSX.Element {
   return (
     <View>
-      <Classcomponent />
+      <Stateincomponent />
     </View>
   );
 }
