@@ -1,11 +1,12 @@
+/* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react-native/no-inline-styles */
 import {View} from "react-native";
-import Stateincomponent from "./components/class-components/Stateincomponent";
+import Lifecyclem from "./components/Lifecyclem";
 
 function App(): JSX.Element {
   return (
     <View>
-      <Stateincomponent />
+      <Lifecyclem />
     </View>
   );
 }

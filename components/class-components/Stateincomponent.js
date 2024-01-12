@@ -23,9 +23,11 @@ class Stateincomponent extends Component {
         return (
             <View>
                 <Text style={styles.mainHeading}>Using States In Class Components</Text>
-                <Text style={Stateincomponentstyle.states}>Hello, {this.state.name}</Text>
-                {this.state.age !== null ? <Text style={Stateincomponentstyle.states}>Your age is {this.state.age}</Text> : <Text></Text>}
-                <Button title="Update" onPress={this.changeName} />
+                <View style={Stateincomponentstyle.box}>
+                    <Text style={Stateincomponentstyle.states}>Hello, {this.state.name}</Text>
+                    {this.state.age !== null ? <Text style={Stateincomponentstyle.states}>Your age is {this.state.age}</Text> : <Text></Text>}
+                    <Button title="Update" onPress={this.changeName} />
+                </View>
             </View>
         );
     }
@@ -35,12 +37,15 @@ class Stateincomponent extends Component {
 const Stateincomponentstyle = StyleSheet.create({
     box: {
         margin: 10,
-        backgroundColor: 'yellow'
+        backgroundColor: 'yellow',
+        padding: 50,
+        borderRadius: 10
     },
     states: {
         color: '#000',
         fontSize: 18,
-        textAlign: "center"
+        textAlign: "center",
+        paddingBottom: 10
     }
 });
 
