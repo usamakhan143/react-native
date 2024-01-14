@@ -1,12 +1,12 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react-native/no-inline-styles */
 import {View} from "react-native";
-import ActivityIndicatorloader from "./components/ActivityIndicatorloader";
+import Modaldialogue from "./components/Modaldailogue";
 
 function App(): JSX.Element {
   return (
     <View style={{flex: 1}}>
-      <ActivityIndicatorloader />
+      <Modaldialogue />
     </View>
   );
 }
