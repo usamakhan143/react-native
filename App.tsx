@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react-native/no-inline-styles */
 import {Platform, StatusBar, View} from "react-native";
-import Webviewpkg from "./components/Webviewpkg";
+import Modalcustom from "./components/modals/Modalcustom";
 
 function App(): JSX.Element {
   return (
@@ -11,7 +11,7 @@ function App(): JSX.Element {
         barStyle={"light-content"}
         hidden={false}
       />
-      <Webviewpkg />
+      <Modalcustom />
     </View>
   );
 }

@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable prettier/prettier */
 import { Button, Modal, StyleSheet, Text, View } from "react-native";
-import styles from "../styles/styles";
+import styles from "../../styles/styles";
 import { useState } from "react";
 
 
