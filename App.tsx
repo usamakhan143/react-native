@@ -1,12 +1,12 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react-native/no-inline-styles */
 import {View} from "react-native";
-import Modaldialogue from "./components/Modaldailogue";
+import Pressablecomp from "./components/Pressablecomp";
 
 function App(): JSX.Element {
   return (
     <View style={{flex: 1}}>
-      <Modaldialogue />
+      <Pressablecomp />
     </View>
   );
 }
