@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react-native/no-inline-styles */
 import {Platform, StatusBar, View} from "react-native";
@@ -17,8 +18,30 @@ function App(): JSX.Element {
         hidden={false}
       />
       <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name={"Login"} component={Login} />
+        <Stack.Navigator
+          screenOptions={{
+            headerStyle: {
+              backgroundColor: "red",
+            },
+            headerTitleStyle: {
+              fontSize: 22,
+              color: "white",
+            },
+          }}>
+          <Stack.Screen
+            name={"Login"}
+            component={Login}
+            options={{
+              title: "Sign in",
+              headerStyle: {
+                backgroundColor: "red",
+              },
+              headerTitleStyle: {
+                fontSize: 22,
+                color: "white",
+              },
+            }}
+          />
           <Stack.Screen name={"Home"} component={Home} />
         </Stack.Navigator>
       </NavigationContainer>
