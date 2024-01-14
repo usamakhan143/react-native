@@ -1,18 +1,28 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react-native/no-inline-styles */
 import {Platform, StatusBar, View} from "react-native";
-import Modalcustom from "./components/modals/Modalcustom";
+import {NavigationContainer} from "@react-navigation/native";
+import Home from "./components/screens/Home";
+import {createNativeStackNavigator} from "@react-navigation/native-stack";
+import Login from "./components/screens/Login";
 
 function App(): JSX.Element {
+  const Stack = createNativeStackNavigator();
+
   return (
-    <View style={{flex: 1}}>
+    <>
       <StatusBar
         backgroundColor={Platform.OS === "android" ? "blue" : "yellow"}
         barStyle={"light-content"}
         hidden={false}
       />
-      <Modalcustom />
-    </View>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name={"Login"} component={Login} />
+          <Stack.Screen name={"Home"} component={Home} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
   );
 }
 
