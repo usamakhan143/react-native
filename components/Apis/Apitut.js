@@ -2,7 +2,7 @@
 /* eslint-disable prettier/prettier */
 import { useEffect, useState } from "react";
 import { ActivityIndicator, FlatList, StyleSheet, Text, View } from "react-native";
-import styles from "../styles/styles";
+import styles from "../../styles/styles";
 
 
 const Apitut = () => {

@@ -12,7 +12,8 @@ import {createMaterialTopTabNavigator} from "@react-navigation/material-top-tabs
 import Grid from "./components/Grid";
 import User from "./components/User";
 import Togglecom from "./components/Togglecom";
-import Apitut from "./components/Apitut";
+import Apitut from "./components/Apis/Apitut";
+import Postapi from "./components/Apis/Postapi";
 
 function App(): JSX.Element {
   const Stack = createNativeStackNavigator();
@@ -74,6 +75,7 @@ function App(): JSX.Element {
           <bottomTab.Screen name="API" component={Apitut} />
           <bottomTab.Screen name="Home" component={User} />
           <bottomTab.Screen name="Status" component={Togglecom} />
+          <bottomTab.Screen name="Post Api" component={Postapi} />
         </bottomTab.Navigator>
       </NavigationContainer>
     </>
